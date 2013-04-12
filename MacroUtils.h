@@ -5,11 +5,12 @@
 // that uses this DLL. This way any other project whose source files include this file see 
 // WINLIB_API functions as being imported from a DLL, whereas this DLL sees symbols
 // defined with this macro as being exported.
-#ifdef WINLIB_EXPORTS
+/*#ifdef WINLIB_EXPORTS
 #define WINLIB_API __declspec(dllexport)
 #else
 #define WINLIB_API __declspec(dllimport)
-#endif
+#endif*/
+#define WINLIB_API
 
 
 #ifdef UNICODE
